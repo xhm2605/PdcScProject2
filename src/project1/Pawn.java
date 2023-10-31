@@ -39,6 +39,6 @@ class Pawn extends Piece {
 
     @Override
     public String toString() { //this method differetiates the White pieces from the Black pieces for easier identification, where White is Uppercase and Black is lowercase
-        return isWhite() ? "P" : "p";
+        return isWhite() ? "White Pawn" : "Black Pawn";
     }
 }

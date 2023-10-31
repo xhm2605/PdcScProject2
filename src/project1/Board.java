@@ -9,7 +9,7 @@ package project1;
  * @author daniel.legrand
  */
 public class Board {
-    private Piece[][] board;
+    public Piece[][] board;
     public boolean whiteToMove;
     public boolean kingCaptured;
 
@@ -83,15 +83,20 @@ public class Board {
             return false;
         }
 
-        if (board[to[0]][to[1]] != null && board[to[0]][to[1]].isWhite() != whiteToMove) { //check to see if opponents piece is taken, and if king is captured games ends
-            if (board[to[0]][to[1]] instanceof King) {
-                kingCaptured = true;
-            }
+        if (board[to[0]][to[1]] != null && board[to[0]][to[1]].isWhite() == board[from[0]][from[1]].isWhite()) { //prevents pieces capturing their own pieces
+            return false;
+        }
+        
+        if (board[to[0]][to[1]] != null && board[to[0]][to[1]] instanceof King) { //check to see if opponents piece is taken, and if king is captured games ends
+            
+            kingCaptured = true;
             System.out.println("Captured " + board[to[0]][to[1]].toString());
         }
 
         board[to[0]][to[1]] = fromPiece; //moving the piece to now location and delete piece at old location
         board[from[0]][from[1]] = null;
+        
+        whiteToMove = !whiteToMove; // Toggle the turn
 
         return true;
     }
@@ -100,7 +105,7 @@ public class Board {
         whiteToMove = !whiteToMove;
     }
 
-    private int[] coordinatesToIndices(String coordinates) { //converts user string into valid array indices so pieces can move
+    public int[] coordinatesToIndices(String coordinates) { //converts user string into valid array indices so pieces can move
         if (coordinates.length() != 2) {
             return null;
         }

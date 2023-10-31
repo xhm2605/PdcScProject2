@@ -9,7 +9,7 @@ package project1;
  * @author daniel.legrand
  */
 abstract class Piece { //this class differentiates the the colour pieces on the chess board by checking if it is player White's turn
-    private boolean isWhite;
+    final private boolean isWhite;
 
     public Piece(boolean isWhite) {
         this.isWhite = isWhite;

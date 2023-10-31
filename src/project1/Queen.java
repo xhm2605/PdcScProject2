@@ -23,6 +23,6 @@ class Queen extends Piece {
 
     @Override
     public String toString() { //this method differetiates the White pieces from the Black pieces for easier identification, where White is Uppercase and Black is lowercase
-        return isWhite() ? "Q" : "q";
+        return isWhite() ? "White Queen" : "Black Queen";
     }
 }
