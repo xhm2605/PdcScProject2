@@ -1,0 +1,14 @@
+Wed Nov 01 12:21:06 NZDT 2023 : Apache Derby Network Server - 10.14.2.0 - (1828579) started and ready to accept connections on port 1527
+----------------------------------------------------------------
+Wed Nov 01 12:21:06 NZDT 2023:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-018b-880a-6c2a-000047f75172 
+on database directory /Users/daniel.legrand/NetBeansProjects/Project1/ChessGameDB with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@4b85612c 
+Loaded from file:/Users/daniel.legrand/NetBeansProjects/PDC_Tutorials/db-derby-10.14.2.0-bin/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=11.0.19+9-LTS-224
+user.dir=/Users/daniel.legrand/NetBeansProjects/PDC_Tutorials/db-derby-10.14.2.0-bin
+os.name=Mac OS X
+os.arch=aarch64
+os.version=14.0
+derby.system.home=/Users/daniel.legrand/NetBeansProjects/Project1
+Database Class Loader started - derby.database.classpath=''
