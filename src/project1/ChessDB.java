@@ -4,9 +4,7 @@
  */
 package project1;
 
-import java.sql.Connection;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 
 /**
  *
@@ -26,10 +24,6 @@ public class ChessDB {
             System.out.println(ex.getMessage());
         }
 
-    }
-
-    public static void main(String[] args) {
-        
     }
 
     public void closeConnection() {
